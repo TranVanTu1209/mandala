@@ -1,6 +1,8 @@
 /** @format */
 
 @media (max-width: 1316px) {
+	
+	/* hotel resuls */
 	#hotel-results .row aside {
 		order: 2;
 	}
@@ -25,6 +27,20 @@
 }
 
 @media (max-width: 1024px) {
+
+	/* travel influences section */
+	#travel-influences .inner .grid .article-1 .card .card-img-top {
+		width: 100%;
+		height: 440px !important;
+	}
+
+	/* combo deals section */
+	#combo-deals .inner .row .card .card-body .rating .type-rating {
+		font-size: 0.82rem;
+	}
+	#combo-deals .inner .row .card .card-body .card-title {
+		font-size: 1.2rem;
+	}
 	/* search filter */
 	#show-filter-search .navbar-nav .nav-item .tab {
 		font-size: 0.9rem;
@@ -174,6 +190,8 @@
 }
 
 @media (max-width: 1200px) {
+	/* main footer */
+
 	/* main header */
 	#main-header ul li {
 		padding-left: 0.1rem;
@@ -199,7 +217,54 @@
 }
 
 @media (max-width: 768px) {
-  	#hotel-results .main-hotels .header-above ul li button {
+	/* combo deals */
+	#combo-deals {
+		padding-bottom: 0 !important;
+	}
+	#combo-deals .container {
+		margin-left: 0;
+		margin-right: 0;
+	}
+	#combo-deals .inner .row {
+		width: 768px;
+	}
+	#combo-deals .inner .row div {
+		padding: 0.3rem;
+	}
+
+	#combo-deals .container .outer {
+		margin-top: 1rem;
+		margin-bottom: 1rem;
+	}
+	#combo-deals .inner .row .card .card-body .rating {
+		display: flex;
+		flex-direction: column;
+	}
+	#combo-deals .inner .row .card .card-body {
+		padding: 0.7rem;
+		margin-bottom: 1rem;
+	}
+	#combo-deals .inner .row .card .card-body .rating span.bg-success {
+		width: 65px;
+		margin-bottom: 0.4rem;
+		display: inline-block;
+	}
+	#combo-deals .inner .row .card .card-body .rating .comments {
+		display: flex;
+		flex-direction: column;
+	}
+	#combo-deals .inner .row .card .card-body .rating .comments span:first-child {
+		padding-left: 0 !important;
+	}
+	/* travel influences */
+	#travel-influences .inner .grid {
+		grid-template-columns: repeat(2, 1fr);
+	}
+	#travel-influences .inner .grid .article-1 {
+		grid-column: 1 / span 2;
+	}
+	/* hotel results page */
+	#hotel-results .main-hotels .header-above ul li button {
 		font-size: 0.8rem;
 		padding: 0.2rem 0.525rem;
 	}

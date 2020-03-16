@@ -28,16 +28,58 @@
 
 /* mobile phone */
 @media (max-width: 500px) {
-  #hotel-results .list-result-hotels .hotel-1 .hotel-1-header div:first-child {
-  display: none !important;
-  text-align: center;
-}
-   #hotel-results .list-result-hotels .endow-banner {
-     padding: 1rem;
-   }
-  #hotel-results .list-result-hotels .endow-banner .tag {
-    display: none;
-  }
+	#main-footer .row div:first-child ul {
+		padding-left: 2.5rem;
+	}
+	#main-footer .row .col-md-4 ul {
+		border-bottom: 1px solid #ccc;
+	}
+	#main-footer .row div:first-child ul li.location {
+		padding-right: 15rem;
+	}
+	#main-footer .row .col-lg-3 .row-1 {
+		display: grid;
+		grid-template-columns: 1fr 4fr;
+		grid-gap: 0;
+	}
+	/* show case */
+	#showcase h1 {
+		font-size: 1.1rem;
+	}
+	#showcase p {
+		font-size: 0.9rem;
+	}
+	/* home banner */
+	#home-banner #showcase-carousel i {
+		color: var(--extra-card-color);
+		background-color: #333;
+		border-radius: 50%;
+		font-size: 2rem;
+		padding: 0.2rem 0.7rem;
+	}
+	/* combo deals */
+	#combo-deals .inner .row {
+		width: 480px;
+	}
+	#favourite-locations .locations .location .text {
+		position: absolute;
+		top: 40%;
+		left: 39%;
+	}
+	#travel-influences .inner .grid .article-1 .card .card-body {
+		left: 1%;
+	}
+	/* hotel results page */
+	#hotel-results .list-result-hotels .hotel-1 .hotel-1-header div:first-child {
+		display: none !important;
+		text-align: center;
+	}
+	#hotel-results .list-result-hotels .endow-banner {
+		padding: 1rem;
+	}
+	#hotel-results .list-result-hotels .endow-banner .tag {
+		display: none;
+	}
 	#hotel-results .list-result-hotels .hotel {
 		border: none !important;
 	}
@@ -142,8 +184,26 @@
 		width: 90%;
 	}
 }
-
+@media (max-width: 414px) {
+	#travel-influences .inner .grid .article-1 {
+		grid-column: 1 / span 1;
+	}
+	#travel-influences .inner .grid {
+		grid-template-columns: repeat(1, 1fr);
+	}
+	#combo-deals .inner .row {
+		width: 410px;
+	}
+}
 @media (max-width: 375px) {
+	/*  */
+	#favourite-locations .locations .location .text {
+		left: 35%;
+	}
+	/*  */
+	#combo-deals .inner .row {
+		width: 373px;
+	}
 	/*  */
 	#hotel-results .list-result-hotels .hotel .main-info .hotel-imgs .extra-imgs {
 		grid-template-columns: repeat(5, 1fr);
@@ -159,7 +219,7 @@
 	}
 	/* footer update first time */
 	#sign-up-bottom .inner input[type="email"] {
-		width: 344px;
+		width: 345px;
 	}
 
 	/* news page */
@@ -169,6 +229,12 @@
 }
 
 @media (max-width: 325px) {
+	#sign-up-bottom .inner input[type="email"] {
+		width: 290px;
+	}
+	#combo-deals .inner .row {
+		width: 320px;
+	}
 	#hotel-results .container.fluid {
 		width: 96%;
 	}

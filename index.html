@@ -24,7 +24,7 @@
 		<link rel="stylesheet" href="./css/mobile.css" />
 		<title>Trang chu | Hotel for your family</title>
 	</head>
-	<body>
+	<body class="bg-extra-light">
 		<!-- main header menu -->
 		<header id="main-header" class="bg-header">
 			<div class="container">
@@ -99,15 +99,580 @@
 				</nav>
 			</div>
 		</header>
+		<!-- show case home -->
+		<section id="showcase">
+			<div class="overlay">
+				<div class="container text-center">
+					<h1 class="mt-4">
+						CHUỖI KHÁCH SẠN NHƯỢNG QUYỀN HÀNG ĐẦU VIỆT NAM
+					</h1>
+					<p>
+						Hơn +10000 phòng khách sạn 5 sao chuẩn quốc tế
+					</p>
+					<!-- search bar -->
+					<div class="search-bar">
+						<form action="" class="form-inline">
+							<div class="input-group">
+								<input type="text" class="input-group-text" />
+								<input type="text" class="input-group-text" />
+								<input type="text" class="input-group-text" />
+								<input type="text" class="input-group-text" />
+								<input type="submit" class="input-group-btn" value="Search" />
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+		</section>
 		<!-- home banner section -->
 		<section id="home-banner">
-			<div class="home-banner-img">
-				<img src="./img/home_banner.png" alt="Hotel banner" />
+			<!-- home banner carousel -->
+			<div id="showcase-carousel" class="carousel slide" data-ride="carousel">
+				<!-- Indicators -->
+				<ul class="carousel-indicators">
+					<li
+						data-target="#showcase-carousel"
+						data-slide-to="0"
+						class="active"
+					></li>
+					<li data-target="#showcase-carousel" data-slide-to="1"></li>
+					<li data-target="#showcase-carousel" data-slide-to="2"></li>
+					<li data-target="#showcase-carousel" data-slide-to="3"></li>
+				</ul>
+
+				<!-- The slideshow -->
+				<div class="carousel-inner">
+					<div class="carousel-item active">
+						<a href="#"><img src="./img/home_banner.png" alt="Good Hotel"/></a>
+					</div>
+					<div class="carousel-item">
+						<a href="#"
+							><img src="./img/home_banner_1.jpg" alt="Mandala Hotel"
+						/></a>
+					</div>
+					<div class="carousel-item">
+						<a href="#"
+							><img src="./img/home_banner_4.jpg" alt="Best hotel in Viet Nam"
+						/></a>
+					</div>
+					<div class="carousel-item">
+						<a href="#"
+							><img src="./img/home_banner_3.jpg" alt="Nghi ngoi an choi hotel"
+						/></a>
+					</div>
+				</div>
+
+				<!-- Left and right controls -->
+				<a
+					class="carousel-control-prev"
+					href="#showcase-carousel"
+					data-slide="prev"
+				>
+					<i class="fas fa-chevron-left"></i>
+				</a>
+				<a
+					class="carousel-control-next"
+					href="#showcase-carousel"
+					data-slide="next"
+				>
+					<i class="fas fa-chevron-right"></i>
+				</a>
+			</div>
+		</section>
+		<!-- combo deal gio vang section -->
+		<section id="combo-deals" class="py-5">
+			<div class="container">
+				<div class="inner">
+					<div class="title text-center pb-4">
+						<h4 class="main-color font-weight-bold">
+							<i class="fas fa-gifts"></i> COMBO | DEAL GIỜ VÀNG
+						</h4>
+					</div>
+					<div class="row">
+						<!-- hotel 1 -->
+						<div class="col-md-4">
+							<div class="card">
+								<a href="#">
+									<img
+										class="card-img-top"
+										src="./img/combo_deal_1.png"
+										alt="Hotel Mandala"
+									/>
+								</a>
+								<div class="card-body">
+									<h4 class="card-title">Hotel de la Coupole Sapa</h4>
+									<p class="card-text small less-dark">
+										<i class="fas fa-map-marker-alt"></i> 01, Hoang Lien Street
+										Sapa District Lao Cai Province
+									</p>
+									<div class="rating">
+										<span class="bg-success text-white rounded p-2">
+											4.2 <i class="fas fa-star"></i>
+										</span>
+										<span class="comments">
+											<span class="amount-rating px-2">(102) đánh giá</span>
+											<span class="type-rating">
+												Very good
+											</span>
+										</span>
+									</div>
+									<div class="price py-3">
+										<span class="sale-price">
+											<span class="text-danger large">
+												515.890 <sup class="digit">đ</sup>
+												<span class="amount less-dark">
+													1 phòng/ đêm
+												</span></span
+											>
+											<div class="py-1">
+												<span class="real-price line-through less-dark">
+													1.515.890 <sup class="digit">đ</sup>
+												</span>
+												<span class="text-warning down-percent ml-4">
+													Giảm <span class="percent">70%</span>
+												</span>
+											</div>
+										</span>
+									</div>
+
+									<a href="#" class="btn-extra-light text-uppercase">
+										<svg
+											xmlns="http://www.w3.org/2000/svg"
+											width="13.76"
+											height="5.364"
+											viewBox="0 0 13.76 5.364"
+										>
+											<path
+												id="Path_991"
+												data-name="Path 991"
+												d="M651.186,206.3a2.682,2.682,0,1,0,0,1.748h5.695v1.211h2.21v-1.211h.64V206.3Zm-2.533,2.168a1.293,1.293,0,1,1,1.293-1.294A1.294,1.294,0,0,1,648.652,208.468Z"
+												transform="translate(-645.97 -204.493)"
+												fill="#fff"
+											/>
+										</svg>
+										Đặt ngay
+									</a>
+								</div>
+							</div>
+						</div>
+						<!-- hotel 2 -->
+						<div class="col-md-4">
+							<div class="card">
+								<img
+									class="card-img-top"
+									src="./img/combo_deal_2.png"
+									alt="Hotel Mandala"
+								/>
+								<div class="card-body">
+									<h4 class="card-title">Hotel de la Coupole Sapa</h4>
+									<p class="card-text small less-dark">
+										<i class="fas fa-map-marker-alt"></i> 01, Hoang Lien Street
+										Sapa District Lao Cai Province
+									</p>
+									<div class="rating">
+										<span class="bg-success text-white rounded p-2">
+											4.2 <i class="fas fa-star"></i>
+										</span>
+										<span class="comments">
+											<span class="amount-rating px-2">(102) đánh giá</span>
+											<span class="type-rating">
+												Very good
+											</span>
+										</span>
+									</div>
+									<div class="price py-3">
+										<span class="sale-price">
+											<span class="text-danger large">
+												515.890 <sup class="digit">đ</sup>
+												<span class="amount less-dark">
+													1 phòng/ đêm
+												</span></span
+											>
+											<div class="py-1">
+												<span class="real-price line-through less-dark">
+													1.515.890 <sup class="digit">đ</sup>
+												</span>
+												<span class="text-warning down-percent ml-4">
+													Giảm <span class="percent">70%</span>
+												</span>
+											</div>
+										</span>
+									</div>
+
+									<a href="#" class="btn-extra-light text-uppercase">
+										<svg
+											xmlns="http://www.w3.org/2000/svg"
+											width="13.76"
+											height="5.364"
+											viewBox="0 0 13.76 5.364"
+										>
+											<path
+												id="Path_991"
+												data-name="Path 991"
+												d="M651.186,206.3a2.682,2.682,0,1,0,0,1.748h5.695v1.211h2.21v-1.211h.64V206.3Zm-2.533,2.168a1.293,1.293,0,1,1,1.293-1.294A1.294,1.294,0,0,1,648.652,208.468Z"
+												transform="translate(-645.97 -204.493)"
+												fill="#fff"
+											/>
+										</svg>
+										Đặt ngay
+									</a>
+								</div>
+							</div>
+						</div>
+						<!-- hotel 3 -->
+						<div class="col-md-4">
+							<div class="card">
+								<img
+									class="card-img-top"
+									src="./img/combo_deal_3.png"
+									alt="Hotel Mandala"
+								/>
+								<div class="card-body">
+									<h4 class="card-title">Hotel de la Coupole Sapa</h4>
+									<p class="card-text small less-dark">
+										<i class="fas fa-map-marker-alt"></i> 01, Hoang Lien Street
+										Sapa District Lao Cai Province
+									</p>
+									<div class="rating">
+										<span class="bg-success text-white rounded p-2">
+											4.2 <i class="fas fa-star"></i>
+										</span>
+										<span class="comments">
+											<span class="amount-rating px-2">(102) đánh giá</span>
+											<span class="type-rating">
+												Very good
+											</span>
+										</span>
+									</div>
+									<div class="price py-3">
+										<span class="sale-price">
+											<span class="text-danger large">
+												515.890 <sup class="digit">đ</sup>
+												<span class="amount less-dark">
+													1 phòng/ đêm
+												</span></span
+											>
+											<div class="py-1">
+												<span class="real-price line-through less-dark">
+													1.515.890 <sup class="digit">đ</sup>
+												</span>
+												<span class="text-warning down-percent ml-4">
+													Giảm <span class="percent">70%</span>
+												</span>
+											</div>
+										</span>
+									</div>
+
+									<a href="#" class="btn-extra-light text-uppercase">
+										<svg
+											xmlns="http://www.w3.org/2000/svg"
+											width="13.76"
+											height="5.364"
+											viewBox="0 0 13.76 5.364"
+										>
+											<path
+												id="Path_991"
+												data-name="Path 991"
+												d="M651.186,206.3a2.682,2.682,0,1,0,0,1.748h5.695v1.211h2.21v-1.211h.64V206.3Zm-2.533,2.168a1.293,1.293,0,1,1,1.293-1.294A1.294,1.294,0,0,1,648.652,208.468Z"
+												transform="translate(-645.97 -204.493)"
+												fill="#fff"
+											/>
+										</svg>
+										Đặt ngay
+									</a>
+								</div>
+							</div>
+						</div>
+
+						<!-- end -->
+					</div>
+					<!-- next hotel btn -->
+				</div>
+				<div class="outer py-2">
+					<div class="container text-center">
+						<a
+							href="#"
+							class="btn btn-large btn-outline-light rounded-pill text-dark shadow"
+						>
+							Xem thêm <i class="fas fa-arrow-right"></i>
+						</a>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- section other favourite locations -->
+		<section id="favourite-locations" class="py-5">
+			<div class="container text-center">
+				<div class="location-header">
+					<h4 class="title font-weight-bold main-color">
+						KHÁM PHÁ THÊM NHIỀU ĐIỂM ĐẾN KHÁC
+					</h4>
+					<p class="small">
+						Gợi ý tuyệt vời được chọn lựa bởi chuyên gia của chúng tôi
+					</p>
+				</div>
+				<div class="locations">
+					<div class="row">
+						<!-- location 1 -->
+						<div class="location col-lg-4 col-md-6 col-sm-12">
+							<div class="overlay">
+								<div class="inner text-white">
+									<a href="#"
+										><img src="./img/ha_noi.png" alt="Ha Noi Hotel"
+									/></a>
+									<div class="text">
+										<h4 class="font-weight-bold">Hà Nội</h4>
+										<p><span class="hotel-amount">220</span> Khách sạn</p>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!-- location 2 -->
+						<div class="location col-lg-4 col-md-6 col-sm-12">
+							<div class="overlay">
+								<div class="inner text-white">
+									<a href="#"
+										><img src="./img/da_nang.png" alt="Ha Noi Hotel"
+									/></a>
+									<div class="text">
+										<h4 class="font-weight-bold">Đà Nẵng</h4>
+										<p><span class="hotel-amount">300</span> Khách sạn</p>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!-- location 3 -->
+						<div class="location col-lg-4 col-md-6 col-sm-12">
+							<div class="overlay">
+								<div class="inner text-white">
+									<a href="#"
+										><img src="./img/sai_gon.png" alt="Ha Noi Hotel"
+									/></a>
+									<div class="text">
+										<h4 class="font-weight-bold">Hồ Chí Minh</h4>
+										<p><span class="hotel-amount">312</span> Khách sạn</p>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!-- location 4 -->
+						<div class="location col-lg-4 col-md-6 col-sm-12">
+							<div class="overlay">
+								<div class="inner text-white">
+									<a href="#"
+										><img src="./img/nha_trang.png" alt="Ha Noi Hotel"
+									/></a>
+									<div class="text">
+										<h4 class="font-weight-bold">Nha Trang</h4>
+										<p><span class="hotel-amount">540</span> Khách sạn</p>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!-- location 5 -->
+						<div class="location col-lg-4 col-md-6 col-sm-12">
+							<div class="overlay">
+								<div class="inner text-white">
+									<a href="#"><img src="./img/hue.png" alt="Ha Noi Hotel"/></a>
+									<div class="text">
+										<h4 class="font-weight-bold">Huế</h4>
+										<p><span class="hotel-amount">170</span> Khách sạn</p>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!-- location 6 -->
+						<div class="location col-lg-4 col-md-6 col-sm-12">
+							<div class="overlay">
+								<div class="inner text-white">
+									<a href="#"
+										><img src="./img/vung_tau.png" alt="Ha Noi Hotel"
+									/></a>
+									<div class="text">
+										<h4 class="font-weight-bold">Vũng Tàu</h4>
+										<p><span class="hotel-amount">5000</span> Khách sạn</p>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!--  -->
+					</div>
+				</div>
 			</div>
 		</section>
 
+		<!--  -->
+		<section id="travel-influences" class="py-5">
+			<div class="container">
+				<div class="title text-center">
+					<h4 class="font-weight-bold main-color">CẢM HỨNG DU LỊCH</h4>
+					<p>
+						Các trải nghiệm được yêu thích bởi người yêu du lịch
+					</p>
+				</div>
+				<div class="inner">
+					<div class="grid text">
+						<div class="article article-1">
+							<div class="card">
+								<a href="#">
+									<img
+										class="card-img-top"
+										src="./img/ha_giang.png"
+										alt="Hotel Mandala"
+									/>
+								</a>
+									<div class="card-body text-white">
+											<a href="#" class="text-white">
+										<h4 class="font-weight-bold">
+											Review chuyến đi Hà Giang săn mùa vàng
+										</h4>
+										</a>
+										<p class="small">
+											Nhắc đến mùa vàng Tây Bắc, người ta sẽ nghĩ ngay đến Hà
+											Giang. Cảnh đẹp mùa lúa chín nơi đây quả là danh bất hư
+											truyền.
+										</p>
+									</div>
+							</div>
+						</div>
+						<!-- article 2 -->
+						<div class="article">
+							<div class="card">
+								<a href="#">
+									<img
+										class="card-img-top"
+										src="./img/influence_5.png"
+										alt="Hotel Mandala"
+									/>
+								</a>
+								
+									<div class="card-body">
+										<a href="#">
+										<p class="font-weight-bold text-dark">
+											Những khách sạn 7 sao duy nhất trên thế giới nơi đẳng cấp
+											vượt luôn mức 5 sao, lâu nay du khách đều ăn “quả lừa” mà
+											chẳng hay?
+										</p>
+										</a>
+										<p class="extra-small">
+											<i class="fas fa-clock"></i> 1 ngày trước
+										</p>
+										<p class="small">
+											Nhắc đến mùa vàng Tây Bắc, người ta sẽ nghĩ ngay đến Hà
+											Giang. Cảnh đẹp mùa lúa chín nơi đây quả là danh bất hư
+											truyền.
+										</p>
+									</div>
+								
+							</div>
+						</div>
+						<!-- artcile 3 -->
+						<div class="article">
+							<div class="card">
+								<a href="#">
+									<img
+										class="card-img-top"
+										src="./img/influence_5.png"
+										alt="Hotel Mandala"
+									/>
+								</a>
+									<div class="card-body">
+										<a href="#">
+										<p class="font-weight-bold text-dark">
+											Những khách sạn 7 sao duy nhất trên thế giới nơi đẳng cấp
+											vượt luôn mức 5 sao, lâu nay du khách đều ăn “quả lừa” mà
+											chẳng hay?
+										</p>
+										</a>
+
+										<p class="extra-small">
+											<i class="fas fa-clock"></i> 1 ngày trước
+										</p>
+										<p class="small">
+											Nhắc đến mùa vàng Tây Bắc, người ta sẽ nghĩ ngay đến Hà
+											Giang. Cảnh đẹp mùa lúa chín nơi đây quả là danh bất hư
+											truyền.
+										</p>
+									</div>
+								
+							</div>
+						</div>
+						<!-- article 4 -->
+						<div class="article">
+							<div class="card">
+								<a href="#">
+									<img
+										class="card-img-top"
+										src="./img/influence_4.png"
+										alt="Hotel Mandala"
+									/>
+								</a>
+								
+									<div class="card-body">
+										<a href="#">
+										<p class="font-weight-bold text-dark">
+											Những khách sạn 7 sao duy nhất trên thế giới nơi đẳng cấp
+											vượt luôn mức 5 sao, lâu nay du khách đều ăn “quả lừa” mà
+											chẳng hay?
+										</p>
+										</a>
+										<p class="extra-small">
+											<i class="fas fa-clock"></i> 2 ngày trước
+										</p>
+										<p class="small">
+											Mệnh danh là những khách sạn 7 sao hiếm hoi nhất trên thế 
+											giới hiện nay, nhưng sự thật chúng chẳng phải là “7 sao” như ...
+										</p>
+									</div>
+								
+							</div>
+						</div>
+						<!-- article 5 -->
+						<div class="article">
+							<div class="card">
+								<a href="#">
+									<img
+										class="card-img-top"
+										src="./img/influence_5.png"
+										alt="Hotel Mandala"
+									/>
+								</a>
+								
+									<div class="card-body">
+										<a href="#">
+										<p class="font-weight-bold text-dark">
+											Những khách sạn 7 sao duy nhất trên thế giới nơi đẳng cấp
+											vượt luôn mức 5 sao, lâu nay du khách đều ăn “quả lừa” mà
+											chẳng hay?
+										</p>
+										</a>
+										<p class="extra-small">
+											<i class="fas fa-clock"></i> 3 ngày trước
+										</p>
+										<p class="small">
+											Mệnh danh là những khách sạn 7 sao hiếm hoi nhất trên thế 
+											giới hiện nay, nhưng sự thật chúng chẳng phải là “7 sao” như ...
+										</p>
+									</div>
+								
+							</div>
+						</div>
+						<!--  -->
+					</div>
+				</div>
+				<div class="container text-center py-5">
+						<a
+							href="#"
+							class="btn btn-large btn-outline-light rounded-pill text-dark shadow"
+						>
+							Xem thêm <i class="fas fa-arrow-right"></i>
+						</a>
+					</div>
+			</div>
+		</section>
 		<!-- sign up bottom section -->
 		<!-- js boostrap -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 		<script
 			src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
 			integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
@@ -118,6 +683,7 @@
 			integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
 			crossorigin="anonymous"
 		></script>
+
 		<script
 			src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
 			integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
