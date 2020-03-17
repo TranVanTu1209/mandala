@@ -19,6 +19,10 @@
 			href="https://fonts.googleapis.com/css?family=Rubik&display=swap"
 			rel="stylesheet"
 		/>
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/jquery-datetimepicker/2.5.20/jquery.datetimepicker.css"
+		/>
 		<link rel="stylesheet" href="./css/style.css" />
 		<link rel="stylesheet" href="./css/tablets.css" />
 		<link rel="stylesheet" href="./css/mobile.css" />
@@ -26,7 +30,142 @@
 	</head>
 	<body>
 		<!-- header -->
-		<header id="main-header"></header>
+			<!-- main header menu -->
+		<header id="main-header" class="bg-header">
+			<div class="container-fluid">
+				<nav class="navbar navbar-expand-lg">
+					<a class="navbar-brand" href="index.html">
+						<img src="./img/logo.png" alt="Main logo" />
+					</a>
+					<button
+						class="navbar-toggler"
+						type="button"
+						data-toggle="collapse"
+						data-target="#navbarSupportedContent"
+						aria-controls="navbarSupportedContent"
+						aria-expanded="false"
+						aria-label="Toggle navigation"
+					>
+						<i class="fas fa-bars fa-2x text-white"></i>
+					</button>
+
+					<div class="collapse navbar-collapse" id="navbarSupportedContent">
+						<ul class="navbar-nav mr-auto">
+							<li class="nav-item active">
+								<a class="nav-link" href="index.html"
+									>Trang chủ <span class="sr-only">(current)</span></a
+								>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="khach-san-chi-tiet.html"
+									>Giới thiệu</a
+								>
+							</li>
+							<li class="nav-item">
+								<a href="news_main.html" class="nav-link">
+									Tin tức
+								</a>
+							</li>
+							<li class="nav-item">
+								<a href="endow.html" class="nav-link">
+									Khuyến mại
+								</a>
+							</li>
+							<li>
+								<a href="search_result.html" class="nav-link">Liên hệ</a>
+							</li>
+							<li class="nav-item dropdown">
+								<a
+									class="nav-link dropdown-toggle"
+									href="#"
+									id="navbarDropdown"
+									role="button"
+									data-toggle="dropdown"
+									aria-haspopup="true"
+									aria-expanded="false"
+								>
+									<i class="fas fa-globe"></i> Vietnamese
+								</a>
+								<div
+									class="dropdown-menu bg-header"
+									aria-labelledby="navbarDropdown"
+								>
+									<a class="dropdown-item" href="#">Tiếng Anh</a>
+									<a class="dropdown-item" href="#">Tiếng Việt</a>
+									<div class="dropdown-divider"></div>
+									<a class="dropdown-item" href="#">Ngôn ngữ khác</a>
+								</div>
+							</li>
+							<li class="nav-item">
+								<a href="dangnhap.html" class="nav-link"
+									><i class="fas fa-users"></i> Đăng nhập</a
+								>
+							</li>
+							<li class="nav-item">
+								<a href="dangky.html" class="nav-link"
+									><i class="fas fa-user-plus"></i> Đăng ký</a
+								>
+							</li>
+						</ul>
+					</div>
+				</nav>
+			</div>
+		</header>
+
+		<section id="showcase">
+			<div class="overlay">
+				<div class="container text-center">
+					<h1 class="mt-4">
+						CHUỖI KHÁCH SẠN NHƯỢNG QUYỀN HÀNG ĐẦU VIỆT NAM
+					</h1>
+					<p>
+						Hơn +10000 phòng khách sạn 5 sao chuẩn quốc tế
+					</p>
+					<!-- search bar -->
+					<div class="search-bar">
+						<form class="form-inline">
+							<input
+								type="text"
+								class="form-control extra-small"
+								id="place"
+								placeholder="Khách sạn, Thành phố & Địa điểm"
+							/>
+							<!-- time picker -->
+
+							<input
+								type="text"
+								name=""
+								id="time-picker"
+								class="form-control"
+							/>
+
+							<!-- amount picker -->
+							<input
+								type="number"
+								class="form-control"
+								name=""
+								id=""
+								placeholder="2 phòng ngủ, 1 người lớn, 2 trẻ em"
+							/>
+							<!-- star picker -->
+							<input
+								type="text"
+								name=""
+								id=""
+								class="form-control"
+								placeholder="Khách sạn 5 sao"
+							/>
+							<input type="submit" value="Tìm kiếm" class="form-control" />
+						</form>
+						<div class="search-result-notification">
+							<p class="font-weight-bold logo-color text-left mt-3">
+								Có 169 Khách sạn có phòng theo ngày đã chọn
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
 		<!-- show filter search -->
 		<section id="show-filter-search" class="bg-extra-light">
 			<div class="container-fluid">
@@ -2007,12 +2146,162 @@
 			</div>
 		</section>
 		<!-- sign up bottom -->
+			<!-- sign up bottom section -->
+		<section id="sign-up-bottom" class="text-white">
+			<div class="container py-2">
+				<div class="inner row">
+					<form class="form-inline col-lg-6">
+						<div class="form-group mb-2">
+							<input
+								type="email"
+								class="form-control"
+								id=""
+								placeholder="Nhập email..."
+							/>
+						</div>
+						<button type="submit" class="btn btn-logo mb-2">Đăng ký</button>
+					</form>
+					<div class="sign-up-endow col-lg-5 mt-2">
+						<h6 class="font-weight-bold">
+							Các deal giảm giá đến 60% sẽ được gửi đến inbox của bạn
+						</h6>
+						<p class="small">
+							Khi nhấp vào Đăng ký, bạn đồng ý với các Điều Khoản & Điều Kiện và
+							Chính Sách Bảo Mật của chúng tôi
+						</p>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- footer main section -->
+		<footer id="main-footer">
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-lg-3 col-md-4">
+						<ul>
+							<li>
+								<a href="#">
+									<img src="./img/logo.png" alt="logo bottom" />
+								</a>
+							</li>
+							<li class="location">
+								<a href="#">
+									Trụ sở: Tầng 3 Grand Plza, 117 Trần Duy Hưng, Q. Cầu Giấy, TP
+									Hà Nội
+								</a>
+							</li>
+							<li class="py-2">
+								<a href="#">Tel: (84-4) 3555.8999</a>
+							</li>
+							<li>
+								<a href="#">
+									Email: contact@mandala.vn
+								</a>
+							</li>
+						</ul>
+					</div>
+					<div class="col-lg-2 col-md-4">
+						<ul>
+							<li>
+								<h3>Về Mandala INN</h3>
+							</li>
+							<li>
+								<a href="#">Về chúng tôi</a>
+							</li>
+							<li>
+								<a href="#">Hợp tác cùng chúng tôi</a>
+							</li>
+							<li>
+								<a href="#">Cơ hội nghề nghiệp</a>
+							</li>
+						</ul>
+					</div>
+					<div class="col-lg-2 col-md-4">
+						<ul>
+							<li>
+								<h3>Đối tác</h3>
+							</li>
+							<li>
+								<a href="#">Đối tác thanh toán</a>
+							</li>
+							<li>
+								<a href="#">Chương trình đại lý</a>
+							</li>
+						</ul>
+					</div>
+
+					<div class="col-lg-2 col-md-4">
+						<ul>
+							<li>
+								<h3>Điều khoản</h3>
+							</li>
+							<li>
+								<a href="#">Điều khoản sử dụng</a>
+							</li>
+							<li>
+								<a href="#">Quyền riêng tư</a>
+							</li>
+							<li>
+								<a href="#">Chính sách bảo mật</a>
+							</li>
+						</ul>
+					</div>
+					<div class="col-lg-3 col-md-4">
+						<ul>
+							<li>
+								<h3>Tải ứng dụng Mandala INN</h3>
+							</li>
+							<li>
+								<div class="row row-1">
+									<div class="col-5">
+										<img src="./img/qr_code.png" alt="" />
+									</div>
+									<div class="col-7 download-app">
+										<div class="bg-dark rounded">
+											<a href="#" class="py-2"
+												><i class="fab fa-apple"></i>
+												<span class="app-name">App Store</span></a
+											>
+										</div>
+										<div class="bg-dark mt-4 rounded">
+											<a href="#" class="py-2"
+												><i class="fab fa-google-play"></i>
+												<span class="app-name">Google Play</span></a
+											>
+										</div>
+									</div>
+								</div>
+							</li>
+							<li>
+								<h3>Kết nối với chúng tôi</h3>
+							</li>
+							<li>
+								<div class="row">
+									<a href="#"><i class="fab fa-twitter"></i></a>
+									<a href="#"><i class="fab fa-instagram"></i></a>
+									<a href="#"><i class="fab fa-facebook"></i></a>
+									<a href="#"><img src="./img/zalo.png" alt=""/></a>
+								</div>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="copy-right text-center bg-copy-right">
+				<div class="container">
+					<p>
+						Copyright &copy; 2020 Mandala INN. All rights reserved
+					</p>
+				</div>
+			</div>
+		</footer>
 		<!-- footer -->
-		<footer id="main-footer"></footer>
+		
 		<!-- js boostrap -->
+			<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 		<script
-			src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
-			integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+			src="https://code.jquery.com/jquery-3.4.1.min.js"
+			integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
 			crossorigin="anonymous"
 		></script>
 		<script
@@ -2020,11 +2309,15 @@
 			integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
 			crossorigin="anonymous"
 		></script>
+
 		<script
 			src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
 			integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
 			crossorigin="anonymous"
 		></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-datetimepicker/2.5.20/jquery.datetimepicker.full.js"></script>
+	
+		<script src="./js/date_picker_home.js"></script>
 		<script src="./js/search_result.js"></script>
 	</body>
 </html>
