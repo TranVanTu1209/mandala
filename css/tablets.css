@@ -1,6 +1,11 @@
 /** @format */
 
 @media (max-width: 1316px) {
+	#main-header ul li {
+		padding-left: 0.8rem;
+		padding-right: 0.8rem;
+	}
+
 	#showcase form.form-inline input {
 		margin-top: 0.5rem;
 		width: 160px;
@@ -38,6 +43,18 @@
 }
 
 @media (max-width: 1024px) {
+	#main-header ul li a {
+		font-size: 15px !important;
+	}
+
+	#main-header .container-fluid {
+		padding-left: 0.2rem;
+		padding-right: 0.2rem;
+	}
+	#main-header ul li {
+		padding-left: 0.2rem !important;
+		padding-right: 0.2rem !important;
+	}
 	/* search hotel main bar */
 	#showcase {
 		height: 45vh;
@@ -227,32 +244,32 @@
 		padding-left: 0;
 	}
 }
-	@media (max-width: 1200px) {
-		/* main footer */
+@media (max-width: 1200px) {
+	/* main footer */
 
-		/* main header */
-		#main-header ul li {
-			padding-left: 0.1rem;
-			padding-right: 0.1rem;
-		}
-
-		/* footer update first time */
-		#main-footer .row div:last-child ul li .row-1 {
-			flex-direction: column;
-		}
-
-		#main-footer h3 {
-			text-transform: none;
-		}
-
-		#main-footer .row div:last-child ul li:nth-child(2) img {
-			margin-bottom: 1rem;
-		}
-
-		#main-footer .row div:last-child ul li:nth-child(2) .download-app {
-			margin-left: 1rem;
-		}
+	/* main header */
+	#main-header ul li {
+		padding-left: 0.1rem;
+		padding-right: 0.1rem;
 	}
+
+	/* footer update first time */
+	#main-footer .row div:last-child ul li .row-1 {
+		flex-direction: column;
+	}
+
+	#main-footer h3 {
+		text-transform: none;
+	}
+
+	#main-footer .row div:last-child ul li:nth-child(2) img {
+		margin-bottom: 1rem;
+	}
+
+	#main-footer .row div:last-child ul li:nth-child(2) .download-app {
+		margin-left: 1rem;
+	}
+}
 
 @media (max-width: 768px) {
 	/* add tab */
