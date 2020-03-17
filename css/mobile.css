@@ -198,6 +198,13 @@
 	}
 }
 @media (max-width: 414px) {
+		#showcase .search-bar {
+		margin-left: 0;
+	}
+	#showcase .form-inline{
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+	}
 	#travel-influences .inner .grid .article-1 {
 		grid-column: 1 / span 1;
 	}

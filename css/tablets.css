@@ -1,6 +1,18 @@
 /** @format */
 
 @media (max-width: 1316px) {
+	#showcase form.form-inline input {
+		margin-top: 0.5rem;
+		width: 160px;
+	}
+	#showcase .container {
+		width: 100%;
+		margin: 0;
+	}
+	#showcase .search-bar {
+		width: 97%;
+		margin-left: 6%;
+	}
 	/* hotel resuls */
 	#hotel-results .row aside {
 		order: 2;
@@ -26,6 +38,29 @@
 }
 
 @media (max-width: 1024px) {
+	/* search hotel main bar */
+	#showcase {
+		height: 45vh;
+	}
+	#showcase form.form-inline input:last-child {
+		border-top-left-radius: 4px;
+		border-bottom-left-radius: 4px;
+	}
+	#showcase form.form-inline input {
+		border-radius: 2px;
+	}
+	#showcase .container {
+		margin: auto;
+	}
+	#showcase .search-bar {
+		width: 97%;
+		margin-left: 6%;
+	}
+
+	#showcase .search-bar .search-result-notification p {
+		text-align: center !important;
+	}
+
 	/* add tab */
 	#show-filter-search .navbar-nav .nav-item .add-tab {
 		width: 80vw;
@@ -192,33 +227,32 @@
 		padding-left: 0;
 	}
 }
+	@media (max-width: 1200px) {
+		/* main footer */
 
-@media (max-width: 1200px) {
-	/* main footer */
+		/* main header */
+		#main-header ul li {
+			padding-left: 0.1rem;
+			padding-right: 0.1rem;
+		}
 
-	/* main header */
-	#main-header ul li {
-		padding-left: 0.1rem;
-		padding-right: 0.1rem;
+		/* footer update first time */
+		#main-footer .row div:last-child ul li .row-1 {
+			flex-direction: column;
+		}
+
+		#main-footer h3 {
+			text-transform: none;
+		}
+
+		#main-footer .row div:last-child ul li:nth-child(2) img {
+			margin-bottom: 1rem;
+		}
+
+		#main-footer .row div:last-child ul li:nth-child(2) .download-app {
+			margin-left: 1rem;
+		}
 	}
-
-	/* footer update first time */
-	#main-footer .row div:last-child ul li .row-1 {
-		flex-direction: column;
-	}
-
-	#main-footer h3 {
-		text-transform: none;
-	}
-
-	#main-footer .row div:last-child ul li:nth-child(2) img {
-		margin-bottom: 1rem;
-	}
-
-	#main-footer .row div:last-child ul li:nth-child(2) .download-app {
-		margin-left: 1rem;
-	}
-}
 
 @media (max-width: 768px) {
 	/* add tab */
