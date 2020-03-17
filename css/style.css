@@ -252,7 +252,9 @@ li {
 #main-header ul a:hover {
 	color: var(--logo-color);
 }
-
+#main-header  {
+	border-bottom: 1px solid #666;
+}
 #main-header ul li {
 	padding-left: 1.2rem;
 	padding-right: 1.2rem;
