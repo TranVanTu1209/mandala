@@ -642,6 +642,9 @@ li {
 	transition: all 0.4s ease-in-out;
 }
 
+.text-extra-small {
+	font-size: 0.9rem;
+}
 #news-detail
 	.news-liked
 	.news-liked-list
@@ -677,11 +680,19 @@ li {
 }
 
 #travel-news-info .news {
-	line-height: 3rem;
+	line-height: 1.7rem;
 }
-
+#travel-news-info .news .news-title {
+	margin-top: 0.8rem;
+}
+#travel-news-info .news .news-title a {
+	font-size: 1rem;
+}
+#travel-news-info .news p.extra-small {
+	margin-bottom: 0 !important;
+}
 #travel-news-info .travel-news-bottom a {
-	margin: 2rem;
+	margin-bottom: 2rem;
 	margin-left: 10rem;
 	box-shadow: 2px 2px 2px rgba(212, 206, 206, 0.719);
 }
@@ -1488,5 +1499,9 @@ li {
 }
 #travel-influences .inner .grid .article .card .card-body p.extra-small {
 	margin-bottom: 0.55rem;
+}
+/* forgot password */
+#forgot-password .forgot-box {
+	width: 450px;
 }
 /* other page */
