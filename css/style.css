@@ -1055,6 +1055,12 @@ li {
 #show-filter-search .navbar-nav .nav-item .location-tab .more-location a {
 	color: rgb(42, 42, 177);
 }
+
+#show-filter-search .navbar-nav .nav-item .add-tab .child-tab .inner{
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+}
+
 /* result section */
 #hotel-results {
 	background-color: #f5f5f5;

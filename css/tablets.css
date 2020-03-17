@@ -1,7 +1,6 @@
 /** @format */
 
 @media (max-width: 1316px) {
-	
 	/* hotel resuls */
 	#hotel-results .row aside {
 		order: 2;
@@ -27,6 +26,11 @@
 }
 
 @media (max-width: 1024px) {
+	/* add tab */
+	#show-filter-search .navbar-nav .nav-item .add-tab {
+		width: 80vw;
+		left: -35vw;
+	}
 
 	/* travel influences section */
 	#travel-influences .inner .grid .article-1 .card .card-img-top {
@@ -217,6 +221,11 @@
 }
 
 @media (max-width: 768px) {
+	/* add tab */
+	#show-filter-search .navbar-nav .nav-item .add-tab {
+		width: 650px;
+		left: -54vw;
+	}
 	/* combo deals */
 	#combo-deals {
 		padding-bottom: 0 !important;

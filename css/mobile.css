@@ -28,6 +28,19 @@
 
 /* mobile phone */
 @media (max-width: 500px) {
+	#show-filter-search .navbar-nav .nav-item .tab {
+		width: 100%;
+		text-align: left !important;
+	}
+	/* add tab */
+	#show-filter-search .navbar-nav .nav-item .add-tab {
+		width: 400px;
+		left: -7vw;
+	}
+	#show-filter-search .navbar-nav .nav-item .add-tab .child-tab .inner {
+		grid-template-columns: repeat(2, 1fr);
+	}
+	/* main footer */
 	#main-footer .row div:first-child ul {
 		padding-left: 2.5rem;
 	}
