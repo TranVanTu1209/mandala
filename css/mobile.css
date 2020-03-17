@@ -44,7 +44,8 @@
 	#main-footer .row div:first-child ul {
 		padding-left: 2.5rem;
 	}
-	#main-footer .row .col-md-4 ul {
+	#main-footer .row .col-md-4 ul li:last-child{
+		padding-bottom: 2rem;
 		border-bottom: 1px solid #ccc;
 	}
 	#main-footer .row div:first-child ul li.location {
