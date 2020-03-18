@@ -25,24 +25,24 @@
 	#hotel-results .row main {
 		order: 1;
 	}
-	#main-footer .row div:last-child ul li .row-1 {
-		flex-direction: column;
+}
+@media (max-width: 1150px) {
+		#main-footer .boxes {
+		grid-template-columns: repeat(4, 1fr);
 	}
-
-	#main-footer h3 {
-		text-transform: none;
-	}
-
-	#main-footer .row div:last-child ul li:nth-child(2) img {
-		margin-bottom: 1rem;
-	}
-
-	#main-footer .row div:last-child ul li:nth-child(2) .download-app {
-		margin-left: 1rem;
+		#main-footer .boxes ul {
+		margin-bottom: 3rem;
 	}
 }
-
 @media (max-width: 1024px) {
+	/* main footer */
+	#main-footer .boxes {
+		grid-template-columns: repeat(3, 1fr);
+	}
+	#main-footer .boxes ul {
+		margin-bottom: 2rem;
+	}
+	/* main header */
 	#main-header ul li a {
 		font-size: 15px !important;
 	}
@@ -254,24 +254,27 @@
 	}
 
 	/* footer update first time */
-	#main-footer .row div:last-child ul li .row-1 {
-		flex-direction: column;
-	}
-
-	#main-footer h3 {
-		text-transform: none;
-	}
-
-	#main-footer .row div:last-child ul li:nth-child(2) img {
-		margin-bottom: 1rem;
-	}
-
-	#main-footer .row div:last-child ul li:nth-child(2) .download-app {
-		margin-left: 1rem;
-	}
 }
 
 @media (max-width: 768px) {
+	/* main footer */
+		#main-footer .boxes {
+		grid-template-columns: repeat(2, 1fr);
+	}
+	#main-footer .boxes ul {
+		margin-bottom: 2.5rem;
+	}
+	/* end user */
+	#enduser-header .container .brand {
+		display: none;
+	}
+	#enduser-header nav ul {
+		padding: 1rem;
+	}
+	/* nav user */
+	#profile-user aside .nav-user {
+		display: flex;
+	}
 	/* add tab */
 	#show-filter-search .navbar-nav .nav-item .add-tab {
 		width: 650px;
