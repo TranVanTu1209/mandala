@@ -3,7 +3,7 @@
 :root {
 	--logo-color: rgba(179, 132, 46, 0.763);
 	--main-color: #012619;
-	--light-color: #eee;
+	--light-color: #efefef;
 	--less-dark-color: rgba(51, 51, 51, 0.89);
 	--dark-color: #111;
 	--card-color: #ffa726;
@@ -25,7 +25,7 @@
 	background-color: var(--extra-red-color);
 }
 body {
-	font-family: Arial, Helvetica, sans-serif;
+	font-family: "Open Sans", sans-serif;
 }
 
 textarea {
@@ -78,8 +78,8 @@ li {
 
 .btn {
 	text-transform: uppercase;
-	font-size: 1.4rem;
-	padding: 0.6rem 1.2rem;
+	font-size: 1.3rem;
+	padding: 0.4rem 0.8rem;
 }
 
 .btn-logo {
@@ -283,7 +283,7 @@ li {
 }
 
 /* endow main page */
-#endow-main  {
+#endow-main {
 	margin-top: 80px;
 }
 #endow-main .card {
@@ -353,18 +353,17 @@ li {
 }
 #sign-up-bottom .inner input[type="email"] {
 	height: 50px;
-	border-top-right-radius: 0;
 	outline: none;
-	border-bottom-right-radius: 0;
 	width: 300px;
+	margin-right: 0.2rem;
 }
-
 #sign-up-bottom .inner button[type="submit"] {
 	height: 50px;
-	border-top-left-radius: 0;
-	border-bottom-left-radius: 0;
 	outline: none;
 	transition: all 0.5s ease-in-out;
+	font-weight: 600;
+	font-size: 1.5rem;
+	padding-bottom: 19px !important;
 }
 
 #sign-up-bottom .inner button[type="submit"]:hover {
@@ -424,10 +423,6 @@ li {
 	width: 100px;
 }
 
-#main-footer .row div:last-child ul li:nth-child(2) .download-app {
-	margin: 0;
-	padding: 0;
-}
 #main-footer
 	.row
 	div:last-child
@@ -437,15 +432,6 @@ li {
 	span.app-name {
 	position: relative;
 	bottom: 4px;
-}
-#main-footer .row div:last-child ul li:nth-child(2) .download-app div {
-	width: 150px;
-	padding: 0.2rem;
-}
-
-#main-footer .row div:last-child ul li:nth-child(2) .download-app a {
-	padding-bottom: 0.5rem;
-	font-size: 1.1rem;
 }
 
 #main-footer .row div:last-child ul li:nth-child(3) h3 {
@@ -1589,5 +1575,133 @@ section.payment-section {
 	margin-top: 1rem;
 }
 /* end user profile */
-
+#enduser-header nav {
+	display: flex !important;
+	justify-content: space-between;
+	align-items: center;
+}
+#enduser-header nav ul {
+	display: flex;
+	margin-bottom: 0;
+}
+#enduser-header nav ul li a {
+	display: block;
+	/* margin-left: 1.4rem; */
+	color: #fff;
+}
+#enduser-header nav ul li > a:last-child {
+	margin-left: 2rem;
+}
+#enduser-header .dropdown-menu .dropdown-item:hover {
+	background-color: var(--main-color) !important;
+}
+#enduser-header nav ul li a:hover {
+	color: var(--logo-color);
+	text-decoration: none;
+}
+#enduser-header nav ul li:last-child i {
+	background-color: #fff;
+	padding: 5px 7px;
+	color: #111;
+	border-radius: 50%;
+}
+#profile-user main .profile {
+	box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.1), -2px -2px 2px rgba(0, 0, 0, 0.1);
+}
+#profile-user main {
+	padding-right: 0;
+	padding-left: 2.5rem;
+}
+#profile-user main .profile .header {
+	background-color: #f4f8fe;
+}
+#profile-user aside .nav-user li {
+	margin-bottom: 1.5rem;
+}
+#profile-user aside .nav-user li:first-child {
+	margin-bottom: 3.5rem;
+}
+#profile-user aside .nav-user li:first-child a {
+	font-weight: 800;
+}
+#profile-user aside .nav-user li:first-child a i {
+	padding: 5px 6px;
+	border-radius: 50%;
+	background-color: var(--sign-in-color);
+	color: #fff;
+}
+#profile-user aside .nav-user li a {
+	color: #111;
+	font-weight: 600;
+	font-size: 0.9rem;
+}
+#profile-user aside .nav-user {
+	position: sticky;
+	top: 4rem;
+}
+#profile-user aside {
+	padding-right: 0;
+}
+#profile-user aside .nav-user li a:hover {
+	text-decoration: none;
+	color: var(--sign-in-color);
+}
+#profile-user aside .nav-user li a i {
+	color: var(--sign-in-color);
+}
+/* book room page */
+section.book-room main {
+	padding-left: 20px !important;
+	padding-right: 20px !important;
+}
+section.book-room main .main-info {
+	padding-left: 0 !important;
+}
+section.book-room main .main-info .room-name {
+	margin-bottom: 0px;
+}
+section.book-room main .main-info .utilities {
+	padding: 0.6rem 0;
+}
+section.book-room main .main-info .utilities span {
+	margin: 0.2rem;
+	padding: 0.2rem;
+	border-radius: 0.2rem;
+	display: inline-block;
+}
+section.book-room main .main-info .good-price p {
+	margin-bottom: 0;
+	padding: 0.4rem;
+	border-radius: 3px;
+}
+section.book-room main .main-info .right-info {
+	display: flex;
+	justify-content: space-between;
+	margin-left: 5rem;
+	flex-direction: column;
+}
+section.book-room main .main-info .right-info .top {
+	display: flex;
+	justify-content: space-between;
+}
+section.book-room main .main-info .right-info .top .rating {
+	margin-left: 0.6rem;
+	position: relative;
+}
+section.book-room main .main-info .right-info .top p.rating::before {
+	width: 100%;
+	left: -10px;
+	top: -10px;
+	position: absolute;
+	border-top: 10px solid transparent;
+	border-bottom: 10px solid transparent;
+	border-right: 10px solid blue;
+	height: 100%;
+}
+section.book-room main .main-info .right-info .top p {
+	margin-bottom: 8px;
+}
+section.book-room .list-rooms .room .main-info {
+	border-bottom: 1px solid #ddd;
+}
 /* other page */
