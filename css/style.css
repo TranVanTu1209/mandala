@@ -1778,9 +1778,8 @@ section.user-done .list-rooms .room .modal .modal-header button i {
 	padding: 0.3rem 0.6rem;
 	border-radius: 50%;
 }
-section.user-done .list-rooms .room .modal .modal-body .mesure form{
+section.user-done .list-rooms .room .modal .modal-body .mesure form {
 	display: grid;
 	grid-template-columns: repeat(3, 1fr);
-	
 }
 /* other page */
