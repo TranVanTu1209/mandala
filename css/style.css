@@ -122,10 +122,11 @@ li {
 	margin-left: 10px;
 }
 .regis_main {
-	margin-top: 50px;
+	margin-top: 10px;
+	font-size: 1rem;
 }
 .regis_content {
-	border-radius: 10px;
+	border-radius: 5px;
 	overflow: hidden;
 }
 .regis_content_left {
@@ -137,7 +138,7 @@ li {
 	border: 0px;
 	color: #fff;
 	padding-right: 0px;
-	border-radius: 10px;
+	border-radius: 5px;
 	overflow: hidden;
 }
 
@@ -182,7 +183,7 @@ li {
 	margin-bottom: 10px;
 	padding: 10px;
 	border: 1px solid #ccc;
-	border-radius: 10px;
+	border-radius: 5px;
 }
 .regis_form form p {
 	margin-bottom: 0px;
@@ -198,8 +199,7 @@ li {
 }
 .regis_login {
 	border-top: 1px solid #ccc;
-	margin-top: 20px;
-	padding-top: 10px;
+	position: relative;
 }
 
 .regis_login button {
@@ -250,7 +250,9 @@ li {
 	height: 40px;
 	border-radius: 0px 5px 5px 0px;
 }
-
+.regis_main input {
+	margin: 1rem 0 !important;
+}
 /* header main  */
 #main-header {
 	position: fixed;
@@ -419,7 +421,6 @@ li {
 	text-transform: uppercase;
 	margin-bottom: 2rem;
 }
-
 
 #main-footer ul:last-child img {
 	width: 35px;
@@ -672,39 +673,31 @@ li {
 .payment-header .container {
 	margin: 0;
 	width: 100vw;
-	padding-top: 0.3rem;
 }
-
+.payment-header {
+	padding-top: 0.4rem;
+	padding-bottom: 0.5rem;
+}
 .payment-header .navbar {
 	padding: 0;
 }
-
-.payment-header .navbar-nav > li:nth-child(2),
-.payment-header .navbar-nav > li:nth-child(3) {
-	width: 120px;
-	border: 1px solid #ccc;
-	border-radius: 3px;
-	margin: 0 0.1rem;
-	text-align: center;
-	padding-top: 0.4rem;
-	height: 40px;
+.payment-header .sign-box {
+	display: flex;
+	width: 400px;
+}
+.payment-header .sign-box li a {
+	display: inline-block;
+	margin-top: 0.5rem;
+	padding: 0.2rem 0.6rem;
+	border: 1px solid #f2f2f2;
 	transition: all 0.4s ease-in-out;
+	border-radius: 4px;
 }
-.payment-header .navbar-nav > li:nth-child(2) .link {
-	display: none !important;
-}
-.payment-header .navbar-nav > li:nth-child(3):hover,
-.payment-header .navbar-nav > li:nth-child(2):hover {
+.payment-header .sign-box li a:hover {
 	background-color: var(--sign-in-color);
-	cursor: pointer;
-}
-
-.payment-header .navbar-nav > li:nth-child(2) a:hover,
-.payment-header .navbar-nav > li:nth-child(3) a:hover {
-	color: #fff;
 	text-decoration: none;
+	color: #fff !important;
 }
-
 .payment-header .navbar-brand {
 	margin-left: 5rem;
 }
@@ -995,7 +988,7 @@ section.payment-section {
 /* add tab */
 #show-filter-search .navbar-nav .nav-item .add-tab {
 	width: 80vw;
-	left: -45vw;
+	left: -32vw;
 }
 /*  */
 #show-filter-search
@@ -1693,5 +1686,101 @@ section.notifications main .notification {
 	padding-bottom: 1rem;
 	border-bottom: 1px solid #ccc;
 	padding-left: 2rem;
+}
+/* end user - show all section */
+section.user-show-all main .header ul,
+section.user-posted main .header ul {
+	display: flex;
+}
+section.user-posted main .header ul {
+	padding-left: 0;
+}
+section.user-show-all main .header {
+	align-items: center;
+}
+section.user-show-all main .header ul li a {
+	color: black;
+	font-weight: 600;
+	display: inline-block;
+	margin-left: 1.5rem;
+	padding-bottom: 0.5rem;
+}
+section.user-posted main .header ul li a {
+	color: black;
+	font-weight: 600;
+	display: inline-block;
+	margin-right: 1.5rem;
+	padding-bottom: 0.5rem;
+}
+section.user-posted main .header ul li a.active,
+section.user-show-all main .header ul li a.active {
+	color: var(--sign-in-color);
+	border-bottom: 2px solid var(--sign-in-color);
+}
+section.user-show-all main .header ul li a:hover,
+section.user-posted main .header ul li a:hover {
+	color: var(--sign-in-color);
+	text-decoration: none;
+	border-bottom: 2px solid var(--sign-in-color);
+}
+
+/* user coming page */
+section.user-coming main .menu,
+section.user-done main .menu,
+section.user-cancel main .menu {
+	display: flex;
+}
+section.user-coming main .menu li a,
+section.user-done main .menu li a,
+section.user-cancel main .menu li a {
+	color: #111;
+	display: inline-block;
+	font-weight: 600;
+	padding-bottom: 0.4rem;
+}
+section.user-coming main .main-menu li a,
+section.user-done main .main-menu li a,
+section.user-cancel main .main-menu li a {
+	margin-right: 1.5rem;
+}
+section.user-coming main .filter-menu li a,
+section.user-done main .filter-menu li a,
+section.user-cancel main .filter-menu li a {
+	margin-left: 1.5rem;
+}
+section.user-coming main .menu li a.active,
+section.user-done main .menu li a.active,
+section.user-cancel main .menu li a.active {
+	color: var(--sign-in-color);
+	border-bottom: 2px solid var(--sign-in-color);
+}
+section.user-coming main .menu li a:hover,
+section.user-done main .menu li a.active,
+section.user-cancel main .menu li a.active {
+	border-bottom: 2px solid var(--sign-in-color);
+}
+section.user-coming main .menu li a:hover,
+section.user-done main .menu li a:hover,
+section.user-cancel main .menu li a:hover {
+	color: var(--sign-in-color);
+	text-decoration: none;
+}
+section.user-coming main .main-menu,
+section.user-done main .main-menu,
+section.user-cancel main .main-menu {
+	padding-left: 0;
+}
+
+/* user done */
+section.user-done .list-rooms .room .modal .modal-header button i {
+	border: 2px solid rgb(216, 13, 13);
+	color: rgb(216, 13, 13);
+	padding: 0.3rem 0.6rem;
+	border-radius: 50%;
+}
+section.user-done .list-rooms .room .modal .modal-body .mesure form{
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	
 }
 /* other page */

@@ -35,6 +35,13 @@
 	}
 }
 @media (max-width: 1024px) {
+	/* register */
+	.regis_content_right {
+		display: none;
+	}
+	.regis_content_left {
+		width: 100% !important;
+	}
 	/* main footer */
 	#main-footer .boxes {
 		grid-template-columns: repeat(3, 1fr);
